@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { useSiteParams, hasContent } from "@/hooks/use-site-params";
 import { Navbar } from "@/components/landing/Navbar";
@@ -19,11 +18,7 @@ import { CarDivider } from "@/components/landing/CarDivider";
 import { TireTrailDivider } from "@/components/landing/TireTrailDivider";
 import { ScrollGlow } from "@/components/landing/ScrollGlow";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   const p = useSiteParams();
 
   useEffect(() => {
