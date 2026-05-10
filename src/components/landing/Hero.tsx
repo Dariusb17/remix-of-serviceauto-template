@@ -38,18 +38,18 @@ export function Hero({
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 50% 40% at 15% 10%, rgba(255,140,60,0.18) 0%, rgba(0,0,0,0) 60%), #0a0a0a",
+              "radial-gradient(ellipse 60% 50% at 18% 12%, rgba(99,102,241,0.28) 0%, rgba(0,0,0,0) 65%), radial-gradient(ellipse 50% 40% at 85% 90%, rgba(79,70,229,0.18) 0%, rgba(0,0,0,0) 60%), #05060f",
           }}
         />
       )}
 
-      {/* Drifting orange glow top-left */}
+      {/* Drifting indigo aura */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 45% 35% at 12% 8%, rgba(255,130,50,0.22), transparent 65%)",
+            "radial-gradient(ellipse 55% 45% at 15% 10%, rgba(99,102,241,0.28), transparent 65%)",
           animation: "drift 14s ease-in-out infinite",
         }}
       />
