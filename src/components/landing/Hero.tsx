@@ -119,9 +119,9 @@ export function Hero({
               animation:
                 "fade-in 800ms ease-out 900ms forwards, pulse-glow 2.4s ease-in-out 1700ms infinite",
             }}
-            className={`group mt-10 inline-flex items-center gap-3 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition-all hover:-translate-y-0.5 sm:text-[15px] ${
+            className={`group mt-10 inline-flex items-center gap-3 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-all hover:-translate-y-0.5 sm:text-[15px] ${
               hasPhone
-                ? "bg-primary hover:brightness-110"
+                ? "bg-gradient-to-r from-primary via-indigo-500 to-indigo-600 hover:brightness-110"
                 : "cursor-not-allowed bg-primary/40"
             }`}
           >
@@ -129,7 +129,7 @@ export function Hero({
             <span>Sunați acum</span>
             {hasPhone && (
               <>
-                <span className="h-4 w-px bg-black/30" />
+                <span className="h-4 w-px bg-white/30" />
                 <span className="text-[15px] font-semibold tracking-normal tabular-nums">
                   {phone}
                 </span>
