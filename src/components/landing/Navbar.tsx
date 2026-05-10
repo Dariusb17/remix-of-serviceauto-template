@@ -38,11 +38,11 @@ export function Navbar({ name, phone }: { name: string; phone: string }) {
           onClick={(e) => !hasPhone && e.preventDefault()}
           style={{
             boxShadow:
-              "0 6px 24px -6px rgba(255,130,50,0.55), inset 0 1px 0 rgba(255,255,255,0.25)",
+              "0 8px 28px -6px rgba(99,102,241,0.65), inset 0 1px 0 rgba(255,255,255,0.22)",
           }}
-          className={`inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-black transition-all hover:-translate-y-0.5 sm:text-sm ${
+          className={`inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 sm:text-sm ${
             hasPhone
-              ? "bg-primary hover:brightness-110"
+              ? "bg-gradient-to-r from-primary to-indigo-500 hover:brightness-110"
               : "cursor-not-allowed bg-primary/40"
           }`}
         >

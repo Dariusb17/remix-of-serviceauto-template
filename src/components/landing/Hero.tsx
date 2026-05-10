@@ -38,18 +38,18 @@ export function Hero({
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 50% 40% at 15% 10%, rgba(255,140,60,0.18) 0%, rgba(0,0,0,0) 60%), #0a0a0a",
+              "radial-gradient(ellipse 60% 50% at 18% 12%, rgba(99,102,241,0.28) 0%, rgba(0,0,0,0) 65%), radial-gradient(ellipse 50% 40% at 85% 90%, rgba(79,70,229,0.18) 0%, rgba(0,0,0,0) 60%), #05060f",
           }}
         />
       )}
 
-      {/* Drifting orange glow top-left */}
+      {/* Drifting indigo aura */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 45% 35% at 12% 8%, rgba(255,130,50,0.22), transparent 65%)",
+            "radial-gradient(ellipse 55% 45% at 15% 10%, rgba(99,102,241,0.28), transparent 65%)",
           animation: "drift 14s ease-in-out infinite",
         }}
       />
@@ -119,9 +119,9 @@ export function Hero({
               animation:
                 "fade-in 800ms ease-out 900ms forwards, pulse-glow 2.4s ease-in-out 1700ms infinite",
             }}
-            className={`group mt-10 inline-flex items-center gap-3 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition-all hover:-translate-y-0.5 sm:text-[15px] ${
+            className={`group mt-10 inline-flex items-center gap-3 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-all hover:-translate-y-0.5 sm:text-[15px] ${
               hasPhone
-                ? "bg-primary hover:brightness-110"
+                ? "bg-gradient-to-r from-primary via-indigo-500 to-indigo-600 hover:brightness-110"
                 : "cursor-not-allowed bg-primary/40"
             }`}
           >
@@ -129,7 +129,7 @@ export function Hero({
             <span>Sunați acum</span>
             {hasPhone && (
               <>
-                <span className="h-4 w-px bg-black/30" />
+                <span className="h-4 w-px bg-white/30" />
                 <span className="text-[15px] font-semibold tracking-normal tabular-nums">
                   {phone}
                 </span>
